@@ -13,9 +13,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       
-    - uses: actions/setup-node@v2
-      with:
-         node-version: '14'
+    - name: Mobydick Action
+      uses: jace-ys/mobydick-action@v0.1.0
       
     - name: Login docker hub
       uses: docker/login-action@v1
