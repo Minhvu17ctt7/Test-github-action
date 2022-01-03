@@ -26,6 +26,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           builder: ${{steps.buildx.ouput.name}}
+          push: true
           tags: ${{ secrets.DOCKER_USERNAME}}/node-app
       - name: verify
         run: echo ${{steps.docker_build.ouput.digest}}
