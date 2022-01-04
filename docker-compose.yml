@@ -1,0 +1,7 @@
+version: "3.0"
+services:
+  nodejs:
+    image: 1712918/node-app
+    container_name: my-app-docker
+    ports:
+      - 3001:3000
